@@ -1,5 +1,6 @@
 @import "~/src/styles/mixins";
 
+
 $headerHeight:100px;
 $footerHeight:100px;
 
@@ -16,6 +17,6 @@ $footerHeight:100px;
     height:$headerHeight;
 }
 .footer{
-    background-color: greenyellow;
+    // background-color: greenyellow;
     height: $footerHeight;
 }

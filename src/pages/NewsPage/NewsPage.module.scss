@@ -1,0 +1,32 @@
+@import "~/src/styles/mixins";
+
+$headerHeight:200px;
+$footerHeight:100px;
+
+.main{
+    min-height: calc(var(--height,100vh) - $headerHeight - $footerHeight);
+
+    .container{
+        @include container();
+    }
+}
+
+.header{
+    height:$headerHeight;
+}
+.footer{
+    height: $footerHeight;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    // grid-template-columns: repeat(auto,minmax(320px, max));
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 40px;
+
+    @media (max-width:800px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

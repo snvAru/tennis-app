@@ -1,0 +1,32 @@
+.TennisCard{
+    border: 1px solid gray;
+    padding: 20px;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1376px;
+    margin: 0 auto;
+    padding: 40px;
+    gap: 40px;
+}
+.date{
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 85%;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: #8D86C9;
+    color: white;
+    margin-top: 15px;
+}

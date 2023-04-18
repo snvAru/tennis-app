@@ -1,0 +1,17 @@
+.navigation{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #F7ECE1;
+}
+.header{
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+.link{
+    color: #333333;
+}

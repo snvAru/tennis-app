@@ -1,0 +1,55 @@
+@import "~/src/styles/mixins";
+
+$headerHeight:100vh;
+$footerHeight:100px;
+
+.main{
+    min-height: calc(var(--height,100vh) - $headerHeight - $footerHeight);
+
+    .container{
+        @include container();
+    }
+}
+
+.header{
+    height:$headerHeight;
+    background-size: cover;
+}
+.footer{
+    height: $footerHeight;
+}
+.name{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // position: absolute;
+}
+.card{
+    width: 250px;
+    height: 140px;
+    margin-left: 7px;
+    margin-right: 7px;
+    background-color: #8D86C9;
+    color: white;
+}
+.service{
+    padding: 20px;
+}
+.serviceName{
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+

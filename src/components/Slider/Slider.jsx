@@ -20,8 +20,8 @@ function Slider({ slides=[] }) {
       <div className={s.topPart}>
         <div className={s.title}>Photos</div>
         <div className={s.buttons}>
-          <div className={s.button} onClick={onPrev} >prev</div>
-          <div className={s.button} onClick={onNext} >next</div>
+          <div className={s.button} onClick={onPrev} >&#8592;</div>
+          <div className={s.button} onClick={onNext} >&#8594;</div>
         </div>
       </div>
       <div className={s.swiperWrapper}>

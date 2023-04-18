@@ -19,6 +19,11 @@
         display: flex;
         flex-direction: row;
         gap: 5px;
+        color: aliceblue;
+    }
+    .button{
+        background-color: hsla(246, 38%, 66%, 1);
+        padding: 7px;
     }
 
     .swiperWrapper{
@@ -26,6 +31,10 @@
         padding: 25px 20px;
         border: 1px solid hsla(30,58%,93%,1);
         height: 500px;
+
+        @media (max-width:600px) {
+            height: 300px;
+        }
     }
 
     .swiper{
